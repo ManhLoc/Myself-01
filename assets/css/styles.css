@@ -454,3 +454,135 @@ a {
     font-size: 1.8rem;
     line-height: normal;
 }
+
+/* Client */
+.client__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client__icon {
+    margin-top: 20px;
+}
+
+.client__desc {
+    width: 419px;
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    line-height: 48px;
+}
+
+.client__name {
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+    color: #767e7e;
+    line-height: normal;
+}
+
+.client__name strong {
+    color: #070707;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.client__name::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    margin-right: 5px;
+    background: #070707;
+}
+
+.client__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 52px;
+    width: 130px;
+}
+
+.client__cta {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2ac9bf;
+}
+
+.client__img {
+    position: relative;
+    width: 600px;
+}
+
+.client__number {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client__number:nth-child(1) {
+    top: 93px;
+    right: 171px;
+    width: 235px;
+    height: 235px;
+}
+
+.client__number:nth-child(2) {
+    top: 0;
+    width: 92px;
+    height: 92px;
+}
+
+.client__number:nth-child(3) {
+    top: 5px;
+    right: 0;
+    width: 110px;
+    height: 110px;
+}
+
+.client__number:nth-child(4),
+.client__number:nth-child(5),
+.client__number:nth-child(6) {
+    width: 78px;
+    height: 78px;
+}
+
+.client__number:nth-child(4) {
+    top: 258px;
+}
+
+.client__number:nth-child(5) {
+    bottom: 0;
+    left: 123px;
+}
+
+.client__number:nth-child(6) {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Ready */
+.ready {
+    margin: 130px 0;
+    background-color: #def6f5;
+}
+
+.ready__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 154px 88px 0;
+}
+
+.ready__heading {
+    margin-top: 0;
+}
+
+.ready__desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: normal;
+}
