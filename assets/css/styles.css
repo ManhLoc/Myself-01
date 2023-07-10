@@ -11,10 +11,265 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Common */
 input,
 textarea,
 select,
 button {
     font-size: inherit;
     font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+.section-heading {
+    margin-top: 18px;
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 186px;
+    height: 68px;
+    border-radius: 14px;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+/* Header */
+.header {
+    padding: 50px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+    column-gap: 39px;
+}
+
+.navbar__link,
+.header-action__link {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.navbar__link:hover {
+    color: #2f3a3b;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #1ebfc1;
+    text-align: center;
+    color: #1ebfc1;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 24px;
+}
+
+/* Hero */
+.hero {
+    margin-bottom: 79px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 136px;
+}
+
+.hero__left {
+}
+
+.hero__left-desc-small {
+    color: #767e7e;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.hero__left-heading {
+    width: 458px;
+    font-size: 6.2rem;
+    line-height: 72px;
+}
+
+.hero__left-desc {
+    width: 374px;
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 32px;
+}
+
+.hero__left-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero__left-btn-top {
+}
+
+.hero__left--action {
+    width: 62px;
+    height: 62px;
+    margin-left: 50px;
+    border-radius: 50%;
+    border: 1px solid #1ebfc1;
+}
+
+.hero__right {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #e0f7f6;
+}
+
+.hero__right-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero__right-courses {
+    display: flex;
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    width: 157px;
+    height: 75px;
+    padding: 17px 25px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__right-icon {
+    position: relative;
+    width: 36px;
+    height: 40px;
+}
+
+.hero__right-icon-small {
+    position: absolute;
+    left: 3px;
+    bottom: 7px;
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.hero__right-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero__right-schedules {
+    position: absolute;
+    bottom: 46px;
+    left: -65px;
+    width: 124px;
+    height: 132px;
+    padding: 16px 25px 23px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__right-schedules-desc,
+.hero__right-people-desc {
+    margin-left: 0;
+}
+
+.hero__right-schedules-row {
+    margin-top: 16px;
+}
+
+.hero__right-schedules-row + .hero__right-schedules-row {
+    margin-top: 12px;
+}
+
+.hero__right-schedules-row:last-child {
+    display: flex;
+    position: absolute;
+    left: 46px;
+}
+
+.hero__right-people {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    width: 207px;
+    height: 90px;
+    padding: 17px 35px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__right-people-desc {
+    justify-content: flex-start;
+}
+
+.avatar-block {
+    margin-top: 8px;
+}
+
+.avatar:first-child {
+    margin-left: 0;
+}
+
+.avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 33px;
+    object-fit: cover;
+    margin-left: -12px;
+}
+
+.avatar:last-child {
+    position: absolute;
+    display: inline-flex;
+    color: #fff;
+    background-color: #1ebfc1;
 }
